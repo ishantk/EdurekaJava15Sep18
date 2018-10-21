@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    
+   <!-- <bean id="cRef1" class="co.edureka.model.Connection" scope="prototype"> -->
+  <!--  <bean id="cRef1" class="co.edureka.model.Connection" init-method="myInit" destroy-method="myDestroy">
+       <property name="url" value="jdbc:mysql://localhost/edureka"/>
+       <property name="username" value="newRoot"/>
+       <property name="password" value="somenewpass123"/>
+       <property name="driver" value="com.mysql.jdbc.Driver"/>
+   </bean>
+   
+   <bean class="co.edureka.model.PostProcessor"/> -->
+
+  <!-- <bean id="cRef2" class="co.edureka.model.Connection">
+       <property name="url" value="jdbc:mysql://localhost/students"/>
+       <property name="username" value="john"/>
+       <property name="password" value="john123"/>
+       <property name="driver" value="com.mysql.jdbc.Driver"/>
+   </bean> -->
+   
+   <!-- <bean id="fRef" class="co.edureka.model.Father">
+       <property name="fname" value="John"/>
+       <property name="lname" value="Watson"/>
+       <property name="wealth" value="200000"/>
+   </bean>
+   
+   <bean id="cRef" class="co.edureka.model.Child" parent="fRef">
+       <property name="fname" value="Jennie"/>
+       <property name="companyName" value="Edureka"/>
+       <property name="vehicles" value="2"/>
+   </bean> -->
+   
+   <!-- <bean id="aRef" class="co.edureka.model.Address">
+       <property name="adrsLine" value="Prinstine Magnum"/>
+       <property name="city" value="Bengaluru"/>
+       <property name="state" value="Karnataka"/>
+       <property name="zipCode" value="520001"/>
+   </bean>
+   
+   <bean id="pRef" class="co.edureka.model.Person">
+       <property name="name" value="Fionna Flynn"/>
+       <property name="phone" value="+91 98989 98989"/>
+       <property name="email" value="fionna@example.com"/>
+       <constructor-arg ref="aRef"/>  Constructor Injection
+       <property name="address" ref="aRef"/>   Setter Injection
+       <property name="certificates">
+       	<list>
+       		<value>OCJP</value>
+       		<value>CCNA</value>
+       		<value>AWS</value>
+       	</list>
+       	<set></set>
+       	<map></map>
+       </property>
+       
+   </bean> -->
+   
+   	<bean id="ca" class="co.edureka.model.CA"/>
+   	<bean id="cb" class="co.edureka.model.CB"/>
+
+    <context:annotation-config/>
+	
+</beans>
